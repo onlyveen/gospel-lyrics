@@ -28,7 +28,7 @@ function SongDetails() {
     <div className='song-details'>
        <SEOHead 
         title={song.title}
-        description={`Lyrics for ${song.title}`}
+        description={`Lyrics for ${song.title} - ${song.transliteration}`}
         url={`https://www.gospelminimelodies.com/${song.slug}`}
       />
       <h1>{song.title}</h1>

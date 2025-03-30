@@ -2,7 +2,7 @@ const songs = [
   {
     youtubeUrl : "https://www.youtube.com/embed/h1JNfugUbvA",
     title: "ఓ ప్రేమ ఓ ప్రేమ - ఓ యేసు నీ ప్రేమ",
-    transliteration: "O Prema O Prema - O Yesu Nee Prema",
+    transliteration: "Oh Prema Oh Prema - Oh Yesu Nee Prema",
     slug: "o-prema-o-yesu-nee-prema",
     lyrics: `పల్లవి:
     ఓ ప్రేమ ఓ ప్రేమ  - ఓ యేసు నీ ప్రేమ
