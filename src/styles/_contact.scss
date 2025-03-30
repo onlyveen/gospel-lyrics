@@ -1,0 +1,107 @@
+.contact-form {
+  padding: 0 0 100px;
+  .container {
+    background: url("../assets/contact.svg") center no-repeat;
+    background-size: cover;
+    padding: 50px;
+    min-height: 80vh;
+    display: flex;
+    border-radius: 30px;
+    align-items: center;
+    gap: 30px;
+    @media screen and (max-width: 1200px) {
+      margin: 15px;
+    }
+    @media screen and (max-width: 768px) {
+     padding: 20px;
+     flex-direction: column;
+     margin: 15px;
+    }
+    .left {
+      color: $color-white;
+      @media screen and (max-width: 768px) {
+        padding: 20px 0 0;
+    
+       }
+      h2 {
+        font-size: 32px;
+        margin-bottom: 15px;
+        @media screen and (max-width: 768px) {
+          font-size: 20px;
+        }
+      }
+      p {
+        font-size: 18px;
+        opacity: 0.7;
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+    }
+    form {
+      width: 60%;
+      min-width: 60%;
+      background: $color-white;
+      padding: 30px;
+      border-radius: 30px;
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: 15px;
+        border-radius: 10px;
+        gap: 20px;
+        label{
+          display: none;
+        }
+      }
+      .error{
+        color: #c51616;
+        font-size: 13px;
+        margin: 8px 0 0;
+        border-radius: 3px;
+      }
+      .form-group {
+        width: calc(50% - 15px);
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+        label{
+          color: $color-dark-blue;
+          font-weight: $font-semi-bold;
+          margin-bottom: 8px;
+        }
+        input,textarea {
+          height: 50px;
+          padding: 15px;
+          border-radius: 5px;
+          border: 1px solid lighten($color-light-text,60);
+        }
+        textarea {
+          height: 100px;
+        }
+        &.full{
+          width: 100%;
+        }
+        &.cta{
+          justify-content: space-between;
+          flex-direction: row;
+          align-items: center;
+          gap: 30px;
+          button{
+            width: auto;
+            @media screen and (max-width: 768px) {
+              width: 100%;
+            }
+          }
+          @media screen and (max-width: 768px) {
+           flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}

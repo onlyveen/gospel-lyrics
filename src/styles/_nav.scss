@@ -1,0 +1,116 @@
+/* _nav.scss */
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba($color-white, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
+  z-index: 9;
+  @media screen and (max-width: 768px) {
+    padding: 15px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    width: 70px;
+    .bar {
+      width: 25px;
+      height: 3px;
+      background: $color-secondary-grad;
+      transition: all 0.3s ease;
+      margin: 5px 0;
+    }
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+    &.open {
+      .bar {
+        margin: -3px 0;
+        transform: rotate(45deg);
+        & + .bar {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    .menu {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      letter-spacing: -2%;
+    }
+
+    a:not(.button) {
+      font-family: $font-body;
+      font-weight: $font-normal;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      color: $color-black;
+      &:hover {
+        color: $color-blue;
+      }
+    }
+    .button {
+      overflow: hidden;
+      &.hide {
+        @media screen and (min-width: 768px) {
+          width: 0;
+          padding: 0;
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .menu {
+        position: absolute;
+        flex-direction: column;
+        background: $color-secondary-grad;
+        left: 0;
+        top: 100%;
+        right: 0;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 50px;
+        transition: all 0.35s;
+        justify-content: flex-end;
+        a {
+          font-size: 24px;
+          color: #fff;
+        }
+      }
+      .button {
+        background: transparent;
+        padding: 0;
+        color: $color-blue;
+        font-size: 14px;
+        &:hover{
+          box-shadow: none;
+        }
+      }
+      &.open {
+        .menu {
+          padding: 50px;
+          max-height: 100vh;
+        }
+      }
+    }
+  }
+}

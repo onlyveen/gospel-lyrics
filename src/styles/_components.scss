@@ -1,0 +1,117 @@
+/* _buttons.scss */
+
+/* Button Padding and Font Sizes */
+$button-padding-sm: 8px 16px;
+$button-padding-md: 12px 24px;
+$button-padding-lg: 14px 28px;
+$button-padding-xl: 16px 32px;
+
+$button-font-size-sm: 12px;
+$button-font-size-md: 14px;
+$button-font-size-lg: 16px;
+$button-font-size-xl: 18px;
+
+$button-border-radius: 4px;
+$button-transition: all 0.35s ease;
+
+/* Base button styles */
+
+
+
+.button,button {
+  white-space: nowrap;
+  display: inline-block;
+  font-family: $font-body;
+  font-weight: $font-bold;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: $button-transition;
+  box-shadow: inset 0 0 0 rgba(0, 0, 0,.3);
+  &:hover{
+    box-shadow: inset 0 0 100px rgba(0, 0, 0,.3);
+  }
+  
+  /* Apply border-radius for rounded buttons */
+  &.rounded {
+    border-radius: 50px;
+    padding: 12px 32px;
+  }
+ 
+
+  /* Basic button variant (no background or border) */
+  &.basic {
+    background-color: transparent;
+    color: $color-blue;
+    border: none;
+    text-decoration: underline;
+   
+  }
+
+  &.solid {
+    background-color: $color-blue;
+    color: white;
+
+   
+  }
+
+  &.hollow {
+    background-color: transparent;
+    color: $color-blue;
+    border: 2px solid $color-blue;
+
+    &:hover {
+      background-color: $color-blue;
+      color: white;
+    }
+  }
+
+  &.white {
+    background-color: white;
+    color: $color-blue;
+    border: 2px solid $color-blue;
+
+    &:hover {
+      background-color: $color-blue;
+      color: white;
+    }
+  }
+
+  /* Primary and Secondary Buttons with Gradients */
+  &.primary {
+    background: $color-accent-grad;
+    color: white;
+  }
+
+  &.secondary {
+    background: $color-primary-grad;
+    color: white;
+  }
+
+
+  /* Size variants */
+  &.xs {
+    padding: $button-padding-sm;
+    font-size: $button-font-size-sm;
+  }
+
+  &.sm {
+    padding: $button-padding-sm;
+    font-size: $button-font-size-md;
+  }
+
+  &.md {
+    padding: $button-padding-md;
+    font-size: $button-font-size-md;
+  }
+
+  &.lg {
+    padding: $button-padding-lg;
+    font-size: $button-font-size-lg;
+  }
+
+  &.xl {
+    padding: $button-padding-xl;
+    font-size: $button-font-size-xl;
+  }
+}

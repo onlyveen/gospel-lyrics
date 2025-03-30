@@ -1,0 +1,35 @@
+/* _variables.scss */
+
+/* Color Gradients */
+$color-primary-grad: linear-gradient(to bottom, rgba(12,21,64,1) 0%, rgba(0,65,172,1) 100%);
+$color-accent-grad: linear-gradient(to bottom, rgba(0,161,155,1) 0%, rgba(0,125,121,1) 100%);
+$color-secondary-grad: linear-gradient(to bottom, rgba(0,13,255,1) 0%, rgba(61,132,248,1) 100%);
+$color-secondary-grad: linear-gradient(to bottom, rgba(0,13,255,1) 0%, rgba(61,132,248,1) 100%);
+$color-light-grad: linear-gradient(99deg, rgba(57, 111, 244, 0.02) -26.7%, rgba(0, 13, 255, 0.20) 237.29%);
+
+
+/* Solid Colors */
+$color-black: #121212;
+$color-white: rgba(255,255,255,1);
+$color-dark-blue: rgba(6,19,54,1);
+$color-blue: rgba(17,55,156,1);
+$color-light-green: rgba(0,161,155,1);
+$color-green: rgba(0,125,121,1);
+$color-light-text: #42526B;
+$color-off-white: #F5F6F7;
+
+
+
+/* Font Settings */
+$font-body: 'Inter', sans-serif;
+$font-heading: 'Nunito Sans', sans-serif;
+
+/* Font Sizes */
+$font-size-base: 16px;
+$font-size-heading: 24px;
+
+/* Font Weights */
+$font-normal: 400;
+$font-semi-bold: 600;
+$font-bold: 700;
+$font-black: 900;

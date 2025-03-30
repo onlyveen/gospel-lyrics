@@ -1,0 +1,53 @@
+/* reset.scss */
+
+/* Box-sizing reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default table styles */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove default form styles */
+input, textarea, button, select {
+  background: none;
+  border: none;
+  outline: none;
+  font: inherit;
+}
+
+/* Set image display to block to avoid any spacing issues */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Normalize some elements */
+html, body {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Set default body margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
