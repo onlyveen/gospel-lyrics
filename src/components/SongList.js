@@ -25,10 +25,8 @@ function SongList({ songs = [], search = "", transliteratedSearch = "" }) {
       {filteredSongs.length > 0 ? (
         filteredSongs.map((song) => (
           <Link key={song.slug} to={`/${song.slug}`} onClick={handleSongClick}>
-            <div>
               <h3>{song.title}</h3>
               <p>{song.transliteration}</p>
-            </div>
           </Link>
         ))
       ) : (

@@ -34,12 +34,12 @@ body {
           // font-family: "Ponnala", sans-serif;
           text-align: center;
         }
-        .youtube-embed{
+        .youtube-embed {
           margin-top: 50px;
-          iframe{
+          iframe {
             width: 100% !important;
             @media screen and (max-width: 768px) {
-             height: 200px !important;
+              height: 200px !important;
             }
           }
         }
@@ -50,7 +50,11 @@ body {
         position: fixed;
         width: 50px;
         height: 50px;
-        background: radial-gradient(160.93% 135.11% at 2.91% 6.03%, #d01212 0%, #940e0d 100%);
+        background: radial-gradient(
+          160.93% 135.11% at 2.91% 6.03%,
+          #d01212 0%,
+          #940e0d 100%
+        );
         left: 0;
         top: 0;
         cursor: pointer;
@@ -69,24 +73,30 @@ body {
         height: 100vh;
         position: sticky;
         top: 0;
-        background: radial-gradient(160.93% 135.11% at 2.91% 6.03%, #d01212 0%, #940e0d 100%);
+        background: radial-gradient(
+          160.93% 135.11% at 2.91% 6.03%,
+          #d01212 0%,
+          #940e0d 100%
+        );
         width: 350px;
         display: flex;
         flex-direction: column;
         overflow: hidden;
         width: 0;
         transition: all 0.3s ease;
-        padding: 40px 0;
+        padding: 20px 0;
         &.open {
-          padding: 40px;
+          padding: 20px;
           width: 350px;
         }
         @media screen and (max-width: 768px) {
           position: fixed;
           width: calc(100vw - 40px) !important;
           transform: translateX(-100%);
+          padding: 15px 0;
           &.open {
             transform: translateX(0);
+            padding: 15px;
           }
         }
         .logo {
@@ -104,7 +114,7 @@ body {
             color: #101010;
             width: 100%;
           }
-          small{
+          small {
             color: #fff;
           }
         }
@@ -121,6 +131,16 @@ body {
             flex-direction: column;
             transition: all 0.3s ease;
             cursor: pointer;
+            h3 {
+              font-size: 16px;
+            }
+            p {
+              font-size: 13px;
+              white-space: nowrap;
+              max-width: 100%;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
             &:hover {
               padding: 10px;
               border: solid 1px #fff;
@@ -137,23 +157,26 @@ body {
   }
 }
 
-
-.empty{
+.empty {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
   text-align: center;
-  p{
+  p {
     margin: 10px 0 0;
-    & ~p{
+    & ~ p {
       margin: 0;
     }
   }
-  .btn{
+  .btn {
     margin-top: 30px;
-    background: radial-gradient(160.93% 135.11% at 2.91% 6.03%, #d01212 0%, #940e0d 100%);
+    background: radial-gradient(
+      160.93% 135.11% at 2.91% 6.03%,
+      #d01212 0%,
+      #940e0d 100%
+    );
     cursor: pointer;
     padding: 20px 40px;
     color: #fff;
