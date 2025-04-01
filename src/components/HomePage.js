@@ -10,7 +10,7 @@ function HomePage() {
     <div>
       <SEOHead
         title="Gospel Mini Melodies"
-        description="Discover a wide collection of gospel songs and lyrics in Telugu."
+        description="Welcome To Gospel Mini Melodies. You can find all Lyrics and Songs Here. Oh prema Oh Prema, Nesthama Nesthama Needu Hrudayam Sokama & Sarvonnathuda Sarvadikari. An also All Lyrics of Oh prema Oh Prema, Nesthama Nesthama Needu Hrudayam Sokama & Sarvonnathuda Sarvadikari"
         url="https://www.gospelminimelodies.com"
       />
       <div className="empty">
