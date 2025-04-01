@@ -41,8 +41,8 @@ const songs = [
   },
   {
     youtubeUrl : "https://www.youtube.com/embed/IfUWTwiGchI",
-    title: "నేస్తమా నేస్తమా",
-    transliteration: "Nesthama Nesthama",
+    title: "నేస్తమా నేస్తమా నీదు హృదయం శోకమా",
+    transliteration: "Nesthama Nesthama Needu Hrudayam Sokama",
     slug: "nesthama-nesthama",
     lyrics: `అను పల్లవి:
 మాయ లోక - మార్గములలో -  మరణమే చూస్తావా ...
