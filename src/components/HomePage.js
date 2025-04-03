@@ -15,7 +15,7 @@ function HomePage() {
       />
       <div className="empty">
         <img src={logo} alt="Logo" />
-        <p>Welcome To Gospel Mini Melodies</p>
+        <h1>Welcome To Gospel Mini Melodies</h1>
         <p>You can find all Lyrics and Songs Here.</p>
         <button className="btn" onClick={() => setIsOpen(true)}>
           Open Song List

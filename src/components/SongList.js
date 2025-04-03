@@ -24,10 +24,10 @@ function SongList({ songs = [], search = "", transliteratedSearch = "" }) {
     <div className="song-list">
       {filteredSongs.length > 0 ? (
         filteredSongs.map((song) => (
-          <Link key={song.slug} to={`/${song.slug}`} onClick={handleSongClick}>
+          <a key={song.slug} href={`/${song.slug}`} onClick={handleSongClick}>
               <h3>{song.title}</h3>
               <p>{song.transliteration}</p>
-          </Link>
+          </a>
         ))
       ) : (
         <p>No songs found</p>
