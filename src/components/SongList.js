@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 import { useSidebar } from '../utils/SidebarContext'; // Import the useSidebar hook
 
 function SongList({ songs = [], search = "", transliteratedSearch = "" }) {
@@ -30,7 +29,7 @@ function SongList({ songs = [], search = "", transliteratedSearch = "" }) {
           </a>
         ))
       ) : (
-        <p>No song found</p>
+        <p>No songs found</p>
       )}
     </div>
   );
