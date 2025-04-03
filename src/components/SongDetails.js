@@ -17,7 +17,15 @@ function SongDetails() {
   }, [slug]);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return (<>
+      <SEOHead 
+        title={`${song.title} - ${song.transliteration}`}
+        description={`Lyrics for ${song.title} - ${song.transliteration}`}
+        url={`https://www.gospelminimelodies.com/${song.slug}`}
+      />
+      <div>Loading...</div>
+      </>
+    );
   }
 
   if (!song) {
