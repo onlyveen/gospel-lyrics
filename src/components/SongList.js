@@ -30,7 +30,7 @@ function SongList({ songs = [], search = "", transliteratedSearch = "" }) {
           </a>
         ))
       ) : (
-        <p>No songs found</p>
+        <p>No song found</p>
       )}
     </div>
   );
