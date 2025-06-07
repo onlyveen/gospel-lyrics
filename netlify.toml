@@ -1,4 +1,9 @@
 [build]
   command = "npm run build"
   publish = "build"
-  timeout = 900  # Increase timeout to 30 minutes (default is 15 minutes)
+
+[build.environment]
+  NODE_ENV = "production"
+
+[[plugins]]
+  package = "@netlify/plugin-cache-core"
