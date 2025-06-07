@@ -4,6 +4,3 @@
 
 [build.environment]
   NODE_ENV = "production"
-
-[[plugins]]
-  package = "@netlify/plugin-cache-core"
